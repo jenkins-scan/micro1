@@ -14,7 +14,7 @@ node {
     currentBuild.result = "FAILURE";
 
     // send slack notification
-    slackSend (color: '#00FFFF', message: "FAILED: Job '${env.JOB_NAME} [${env.BUILD_NUMBER}]' (${env.BUILD_URL})")
+    slackSend (color: '#0019ff', message: "FAILED: Job '${env.JOB_NAME} [${env.BUILD_NUMBER}]' (${env.BUILD_URL})")
 
     // throw the error
     throw e;
